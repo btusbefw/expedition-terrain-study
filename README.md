@@ -21,3 +21,7 @@ The fictional base is 2140 m, summit 5870 m, distance 8.4 km. The final profile 
 Full runtime/layout/motion/contrast check passed. One scene-structure lint warning is accepted for the short integrated canvas/SVG unit. H.264 output has 240 frames, 8.0 seconds, 1920 × 1080, 30 fps. Decoded one-second stills, transition frames and 320 × 180 thumbnail inspected.
 
 CDRXRX · dev@dbrx.fr
+
+## Existing variants
+
+The viewing page also offers the earlier minimal and annotated SVG versions, without restoring their former page layout. Their editable sources are preserved at commits `60428f35f38ce1c93b42c32c9f478498339534f9` and `b61be1b9b6cfd69a58a53719675c03554b318374`, respectively. No new video was rendered for this selector.
