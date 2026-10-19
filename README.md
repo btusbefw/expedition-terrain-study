@@ -1,21 +1,23 @@
-# Field Notes — independent terrain study
+# Expedition terrain study
 
-Eight seconds, 1920 × 1080, 30 fps. A synthetic route climbs a sculptural contour terrain and unfolds into an altitude profile. All geographic data are fictional. This is an independent visual study, not client work or evidence of a commissioned documentary.
+Eight seconds, 1920 × 1080, 30 fps. A route climbs a sculptural contour terrain and unfolds into an altitude profile. Terrain and figures are synthetic. This is an independent visual study, not client work or a real expedition.
 
-## Watch
+[Watch](https://btusbefw.github.io/expedition-terrain-study/) · [MP4](https://btusbefw.github.io/expedition-terrain-study/terrain-study.mp4)
 
-[Watch the study](https://btusbefw.github.io/expedition-terrain-study/) or download terrain-study.mp4.
+## Source and render
 
-## Editable source and render
+`composition.html` is the actual editable HTML/Three.js/SVG/GSAP source, with pinned Three.js 0.181.2 modules and MIT license in `vendor/`. GSAP is pinned to 3.14.2; HyperFrames to 0.8.174. It is not a native After Effects project.
 
-The actual source is composition.html (HTML, SVG geometry and a single paused GSAP timeline). It is not a native After Effects project. Geometry is deterministic trigonometry, with no random generator, external map or real location. Typography uses generic sans-serif and monospace. GSAP is pinned to 3.14.2 and HyperFrames to 0.8.174.
+In a separate scratch folder, copy composition.html to index.html, plus package.json and vendor/. Run `npm run check`, then `npx --yes hyperframes@0.8.174 render --quality delivery --fps 30 --output terrain-study.mp4`. Keep the publication index.html as the viewing page.
 
-Copy composition.html to index.html in a separate working folder, alongside package.json, then run `npm run check` and `npx --yes hyperframes@0.8.174 render --quality delivery --fps 30 --output terrain-study.mp4`. Do not replace the landing page when simply hosting the video.
+## Design
 
-Palette: ink #0A0B0D, layered stone, ice #E6EDF2, route #FF5A1F. Fictional base 2140 m, summit 5870 m, gain 3730 m, distance 8.4 km. The final profile retains only base, summit and distance labels. Decorative titles and scale grids are omitted so the route remains the subject. The independent/synthetic disclosure is on the viewing page, outside the film.
+Fifteen irregular beveled geological layers, matte warm stone, low directional light, contact shadows and a slow 25-degree camera orbit. The orange route is a shadow-casting 3D tube whose path is sampled from the actual terrain surface by downward raycasts, with connectors over each ledge. The same layered sculpture and route morph continuously into a geological cross-section as the camera lowers. Three numerical SVG labels accompany the final section. Geometry is deterministic; no real-world map or client asset is used.
+
+The fictional base is 2140 m, summit 5870 m, distance 8.4 km. The final profile maps altitude linearly and horizontal distance from the route’s cumulative 3D path length. Only the three relevant data labels remain. Independent-study disclosure stays beside the player.
 
 ## Verification
 
-Runtime, layout, motion and contrast checks passed. One lint warning is accepted: this short unit is authored as one SVG-containing scene rather than a mounted sub-composition. Output metadata: 8.0 seconds, 240 frames, 1920 × 1080, 30/1 fps. Decoded output inspected at one-second intervals and across the route-to-profile transition, with 320 × 180 thumbnail review.
+Full runtime/layout/motion/contrast check passed. One scene-structure lint warning is accepted for the short integrated canvas/SVG unit. H.264 output has 240 frames, 8.0 seconds, 1920 × 1080, 30 fps. Decoded one-second stills, transition frames and 320 × 180 thumbnail inspected.
 
 CDRXRX · dev@dbrx.fr
