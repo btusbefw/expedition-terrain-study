@@ -12,7 +12,7 @@ The actual source is composition.html (HTML, SVG geometry and a single paused GS
 
 Copy composition.html to index.html in a separate working folder, alongside package.json, then run `npm run check` and `npx --yes hyperframes@0.8.174 render --quality delivery --fps 30 --output terrain-study.mp4`. Do not replace the landing page when simply hosting the video.
 
-Palette: ink #0A0B0D, layered stone, ice #E6EDF2, route #FF5A1F. Fictional base 2140 m, summit 5870 m, gain 3730 m, distance 8.4 km. The graph uses linear altitude scaling; its visible ticks are 3300, 4600 and 5900 m.
+Palette: ink #0A0B0D, layered stone, ice #E6EDF2, route #FF5A1F. Fictional base 2140 m, summit 5870 m, gain 3730 m, distance 8.4 km. The final profile retains only base, summit and distance labels. Decorative titles and scale grids are omitted so the route remains the subject. The independent/synthetic disclosure is on the viewing page, outside the film.
 
 ## Verification
 
